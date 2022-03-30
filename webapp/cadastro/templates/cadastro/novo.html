@@ -1,0 +1,19 @@
+{% extends "cadastro/home.html" %}
+
+{% block content %}
+    <b>CADASTRO</b>
+    <p>Preencha todos os campos:</p>
+<hr>
+<form action="" method="POST">
+
+    {% csrf_token %}
+
+    {{ form.as_p }}
+
+    <button type="submit" class="btn btn-primary">Salvar</button>
+
+</form>
+
+
+
+{% endblock %}

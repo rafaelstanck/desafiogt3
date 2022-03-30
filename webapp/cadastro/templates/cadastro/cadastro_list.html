@@ -1,0 +1,16 @@
+{% extends "cadastro/home.html" %}
+
+{% block content %}
+    <b>CADASTRADOS:</b>
+    {% for cadastro in cadastro_list %}
+        <article><p>
+            <li>
+            <b>Nome:</b> {{ cadastro.nome }}<br>
+            </li>
+            <b>Idade:</b> {{ cadastro.idade }}<br>
+            <b>Observação:</b> {{ cadastro.observacao}}<br>
+            </p>
+        </article>
+    {% endfor %}
+
+{% endblock %}
